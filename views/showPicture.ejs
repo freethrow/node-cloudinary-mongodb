@@ -1,0 +1,29 @@
+<h1 class="mt-4">Active picture</h1>
+<p class="lead mb-3">Welcome <%= picture.title %></p>
+
+ <div class="row text-center text-lg-left">
+
+            <img class="img-fluid img-thumbnail" src="<%= picture.url %>" alt="">
+            <p class="text-center"><%= picture.title %></p>
+            <p class="text-center">Front page: <%= picture.front %></p>
+
+            <form action="/pictures/delete/<%= picture.id %>" method="POST">
+                <div class="form-group">
+                  <label for="title">Title</label>
+                  <input type="text" class="form-control" id="title" name = "title" placeholder="Image title">
+                </div>
+              
+                <div class="form-group">
+                  <input class="form-check-input" type="checkbox" value="remove" id="remove" name="remove">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Delete image forever?
+                  </label>
+                </div>
+              
+                          
+                 <button type="submit" class="btn btn-primary btn-block">Delete picture</button>
+              </form>
+            
+
+</div>
+

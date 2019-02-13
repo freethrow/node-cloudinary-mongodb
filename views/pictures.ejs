@@ -1,0 +1,15 @@
+<h1 class="mt-4">All pictures</h1>
+<p class="lead mb-3">Welcome <%= user.name %></p>
+
+ <div class="row text-center text-lg-left">
+    <% for (var i = 0; i < pictures.length; i++) { %>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="/pictures/show/<%= pictures[i].id %>" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="<%= pictures[i].url %>" alt="">
+            <p class="text-center"><%= pictures[i].title %></p>
+          </a>
+        </div>
+   <% } %>     
+        
+</div>
+
