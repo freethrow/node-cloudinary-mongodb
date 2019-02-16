@@ -50,9 +50,9 @@ function checkFileType(file, cb){
 
 var cloudinary = require('cloudinary');
 cloudinary.config({ 
-  cloud_name: 'dyv0ua6g9', 
-  api_key: '398967111164127', 
-  api_secret: '_eguhPdcW933fZduiMlOUweb_L4'
+  cloud_name: 'xxxxxxx', 
+  api_key: 'xxxxxxxxxxx', 
+  api_secret: 'xxxxxxxxxxxx'
 });
 //////
 
